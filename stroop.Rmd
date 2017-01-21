@@ -2,7 +2,9 @@
 title: "Stoop Effect Study"
 author: "Jianru Shi"
 date: "January 20, 2017"
-output: pdf_document
+output: 
+pdf_document:
+keep_tex: true
 ---
 
 ```{r setup, include=FALSE}
@@ -91,4 +93,8 @@ https://en.wikipedia.org/wiki/Stroop_effect
 https://faculty.washington.edu/chudler/words.html
 
 http://support.minitab.com/en-us/minitab/17/topic-library/basic-statistics-and-graphs/hypothesis-tests/tests-of-means/why-use-paired-t/
+
+
+
+
 

@@ -2,9 +2,8 @@
 title: "Stoop Effect Study"
 author: "Jianru Shi"
 date: "January 20, 2017"
-output: 
-pdf_document:
-keep_tex: true
+output:
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -13,7 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Introduction 
 
-We may all experienced the same situation when we read a colored word describe a color: we tend to spend more time to recognize the color of the word if it is different with what it describes. For example,  \textcolor{red}{Red} vs.\textcolor{blue}{Blue} and \textcolor{red}{Orange} vs.\textcolor{blue}{Green}. This phenomenon is called [Stroop Effect](https://en.wikipedia.org/wiki/Stroop_effect). As a course project for Udacity Data Analyst Nano Degree, this project will use basic statistics tools to analyze a dataset from a [Stroop Effect Experiment](https://faculty.washington.edu/chudler/java/ready.html). 
+We may all experienced the same situation when we read a colored word describe a color: we tend to spend more time to recognize the color of the word if it is different with what it describes.This phenomenon is called [Stroop Effect](https://en.wikipedia.org/wiki/Stroop_effect). As a course project for Udacity Data Analyst Nano Degree, this project will use basic statistics tools to analyze a dataset from a [Stroop Effect Experiment](https://faculty.washington.edu/chudler/java/ready.html). 
 
 # Study Questions
 ## Question 1 
@@ -27,7 +26,8 @@ Our dependent variable is the time used to read the words in second.
 
 **What is an appropriate set of hypotheses for this task? What kind of statistical test do you expect to perform? Justify your choices.**
 
-Let the time used when read congruent words be $t_1$, and the time used when read incongruent words be $t_2$. Our hypotheses are:$$H_0: t_1-t_2 \ge 0$$ 
+Let the time used when read congruent words be $t_1$, and the time used when read incongruent words be $t_2$. Our hypotheses are:
+$$H_0: t_1-t_2 \ge 0$$ 
 $$H_a:t_1 - t_2 < 0 $$
 
 Since the data were collected from the same participant under two conditions, I would use a one-way **paired-t test** to test my hypotheses. However, this method should only be used under the assumption that the data are normally distributed. We will talk about it in later section. 
@@ -86,13 +86,13 @@ Some similar tasks may include: uppercase the word, turn the words upside down *
 
 ### Reference 
 
-https://faculty.washington.edu/chudler/java/ready.html
+<https://faculty.washington.edu/chudler/java/ready.html>
 
-https://en.wikipedia.org/wiki/Stroop_effect
+<https://en.wikipedia.org/wiki/Stroop_effect>
 
-https://faculty.washington.edu/chudler/words.html
+<https://faculty.washington.edu/chudler/words.html>
 
-http://support.minitab.com/en-us/minitab/17/topic-library/basic-statistics-and-graphs/hypothesis-tests/tests-of-means/why-use-paired-t/
+<http://support.minitab.com/en-us/minitab/17/topic-library/basic-statistics-and-graphs/hypothesis-tests/tests-of-means/why-use-paired-t/>
 
 
 

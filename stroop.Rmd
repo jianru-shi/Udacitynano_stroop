@@ -26,9 +26,10 @@ Our dependent variable is the time used to read the words in second.
 
 **What is an appropriate set of hypotheses for this task? What kind of statistical test do you expect to perform? Justify your choices.**
 
-Let the time used when read congruent words be $t_1$, and the time used when read incongruent words be $t_2$. Our hypotheses are:
-$$H_0: t_1-t_2 \ge 0$$ 
-$$H_a:t_1 - t_2 < 0 $$
+Let the time used when read congruent words be $\mu_C$, and the time used when read incongruent words be $\mu_I$. Our hypotheses are:
+$$H_0: \mu_C-\mu_I \ge 0$$ 
+$$H_a: \mu_C-\mu_I < 0 $$
+The null hypothesis ($H_0$) is that the average time used when read congruent words is greater than or equal to the time used when read incongruent words. The alternative hypothesis ($H_a$) is that the average time used when read congruent words is less than the time used when read incongruent words.
 
 Since the data were collected from the same participant under two conditions, I would use a one-way **paired-t test** to test my hypotheses. However, this method should only be used under the assumption that the data are normally distributed. We will talk about it in later section. 
 
